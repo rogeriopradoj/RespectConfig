@@ -10,6 +10,15 @@
          stopOnFailure="false"
          syntaxCheck="false"
          verbose="false">
+
+	<testsuites>
+		<testsuite name="API tests">
+			<directory suffix="Test.php">./library/Respect/Config</directory>
+		</testsuite>
+		<testsuite name="Examples">
+			<directory suffix=".phpt">./examples</directory>
+		</testsuite>
+	</testsuites>
     <filter>
         <whitelist>
             <directory>../library/</directory>
